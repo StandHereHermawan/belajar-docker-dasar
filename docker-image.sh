@@ -14,3 +14,10 @@ docker image pull mysql:latest
 # versi software paling baru dari Docker Registry
 # Tag bisa diubah sesuai dengan Tag di halaman dokumentasi
 # Docker Image Terkait
+
+# Command Menghapus Docker Image
+# docker image rm < tag nama software image > : < tag versi software image >
+
+# Contoh remove Docker Image Alpine
+docker image rm alpine:latest
+
