@@ -18,3 +18,9 @@ docker container create --name contohRedis redis:latest
 
 # Conton menjalankan Docker Container Redis
 docker container start contohRedis
+
+# Command menghentikan Docker Container
+# docker container stop < Nama container atau containerID >
+
+# Conton menghentikan Docker Container Redis
+docker container stop contohRedis
