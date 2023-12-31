@@ -24,3 +24,9 @@ docker container start contohRedis
 
 # Conton menghentikan Docker Container Redis
 docker container stop contohRedis
+
+# Command menghapus Docker Container
+# docker container rm < Nama container atau containerID >
+
+# Contoh menghapus Docker Container Redis
+docker container rm contohRedis
