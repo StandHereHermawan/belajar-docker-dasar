@@ -12,3 +12,9 @@ docker container ls
 
 # Contoh membuat Docker Container Redis
 docker container create --name contohRedis redis:latest
+
+# Command menjalankan Docker Container
+# docker container start < Nama container atau containerID >
+
+# Conton menjalankan Docker Container Redis
+docker container start contohRedis
