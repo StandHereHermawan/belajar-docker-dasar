@@ -16,3 +16,8 @@ docker container start contohRedis
 # Contoh melihat log Docker Container Redis
 docker container logs contohRedis
 
+# Command Melihat Log Docker Container terus-menerus
+# docker container logs -f < Nama container atau containerID >
+
+# Contoh melihat Log Docker Container Redis terus-menerus
+docker container logs -f contohRedis
