@@ -29,4 +29,9 @@
 #     < image >:< tag >
 
 # contoh command membuat Docker container Nginx dengan tambahan resource limit yang diport forwarding
-docker container create --name smallNginx --publish 8081:80 --memory 100m --cpus 1.0 nginx:latest
+docker container create \
+--name smallNginx \
+--publish 8081:80 \
+--memory 100m \
+--cpus 1.0 \
+nginx:latest

@@ -19,4 +19,12 @@
 # menyiapkan Volume untuk dimounting saat pembuatan container
 docker volume create mongo-data
 # Contoh command membuat container den mounting ke docker volume dengan limited resource
-docker container create --name mongo-data --mount "type=volume,source=mongo-data,destination=/data/db" --publish 27019:27017 --env MONGO_INITDB_ROOT_USERNAME=root --env MONGO_INITDB_ROOT_PASSWORD=example --memory 500m --cpus 1.0 mongo:latest
+docker container create \
+--name mongo-data \
+--mount "type=volume,source=mongo-data,destination=/data/db" \
+--publish 27019:27017 \
+--env MONGO_INITDB_ROOT_USERNAME=root \
+--env MONGO_INITDB_ROOT_PASSWORD=example \
+--memory 500m \
+--cpus 1.0 \
+mongo:latest

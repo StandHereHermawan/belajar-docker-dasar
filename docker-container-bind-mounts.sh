@@ -18,4 +18,11 @@
 #     < image >:< tag >
 
 # Contoh Command membuat container dengan bind mount
-docker container create --name mongoData --mount "type=bind,source=/home/arief-karditya/Project-Belajar-In-Linux/Tools-For-Developing/Docker/belajar-docker-dasar/mongo-data,destination=/data/db" --publish 27018:27017 --env MONGO_INITDB_ROOT_USERNAME=root --env MONGO_INITDB_ROOT_PASSWORD=example --memory 500m --cpus 1.0 mongo:latest
+!docker container create \
+--name mongoData \
+--mount "type=bind,source=/home/arief-karditya/Project-Belajar-In-Linux/Tools-For-Developing/Docker/belajar-docker-dasar/mongo-data,destination=/data/db" \
+--publish 27018:27017 \
+--env MONGO_INITDB_ROOT_USERNAME=root \
+--env MONGO_INITDB_ROOT_PASSWORD=example \
+--memory 500m \
+--cpus 1.0 mongo:latest

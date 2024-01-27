@@ -10,4 +10,9 @@ docker image pull mongo:latest
     # < image >:< tag >
 
 # Contoh Command untuk menambah environment variable Docker Container mongoDB
-docker container create --name contohMongo --publish 27017:27017 --env MONGO_INITDB_ROOT_USERNAME=root --env MONGO_INITDB_ROOT_PASSWORD=example mongo:latest
+docker container create \
+--name contohMongo \
+--publish 27017:27017 \
+--env MONGO_INITDB_ROOT_USERNAME=root \
+--env MONGO_INITDB_ROOT_PASSWORD=example \
+mongo:latest
